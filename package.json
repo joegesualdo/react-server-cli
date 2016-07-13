@@ -1,0 +1,27 @@
+{
+  "name": "@joegesualdo/react-server-cli",
+  "version": "0.0.1",
+  "description": "Quickly start a react server.",
+  "repository": "joegesualdo/react-server-cli",
+  "main": "./dist/cli.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "./node_modules/distify-cli/cli.js --input-file=./cli.js --output-dir=./dist --is-node --is-cli"
+  },
+  "keywords": [
+    "react",
+    "server",
+    "cli"
+  ],
+  "author": {
+    "name": "Joe Gesualdo",
+    "email": "joegesualdo@gmail.com",
+    "url": ""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "distify-cli": "0.0.13"
+  },
+  "dependencies": {}
+}
