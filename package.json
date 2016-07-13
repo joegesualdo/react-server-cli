@@ -3,10 +3,12 @@
   "version": "0.0.1",
   "description": "Quickly start a react server.",
   "repository": "joegesualdo/react-server-cli",
-  "main": "./dist/cli.js",
+  "main": "./cli.js",
   "scripts": {
-    "prepublish": "npm run build",
     "build": "./node_modules/distify-cli/cli.js --input-file=./cli.js --output-dir=./dist --is-node --is-cli"
+  },
+  "bin": {
+    "react-server": "cli.js"
   },
   "keywords": [
     "react",
@@ -23,5 +25,8 @@
     "ava": "^0.15.2",
     "distify-cli": "0.0.13"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@joegesualdo/react-server": "0.0.1",
+    "parse-argv": "0.0.7"
+  }
 }
