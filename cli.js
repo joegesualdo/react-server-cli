@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var parseArgv = require('parse-argv')
 let path = require('path')
 const ReactServer = require('@joegesualdo/react-server');
